@@ -1,0 +1,24 @@
+Procedimento para criar o executável
+
+Ambiente Virtual
+win
+python -m venv venv
+venv\Scripts\Activate
+
+instalar as bibliotecas utilizadas no ambiente virtual
+pip install pyinstaller pyautogui elementpath pandas openpyxl pynput
+
+Atualizar PIP
+python.exe -m pip install --upgrade pip
+
+criar o executável
+pyinstaller --onefile -w main.py
+
+deletar a pasta build e o arquivo main.spec
+o executável estará dentro da pasta dist
+
+
+### trocar o caminho dos processos
+classFiles.py
+classRede.py
+classXMLListas.py
